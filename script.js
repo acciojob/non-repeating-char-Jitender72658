@@ -1,10 +1,12 @@
-let givenString = prompt("Enter a string: ");
-
+// let givenString = prompt("Enter a string: ");
+let character = "null"
 function firstNonRepeatingCharacter(string) {
 	for(let i = 0;i<string.length;i++){
 		if(string.lastIndexOf(string[i])==i && string.indexOf(string[i])==i){
-			return string[i];
+			 character = string[i];
+			return;
 		}
 	}	
 }
-alert(firstNonRepeatingCharacter(givenString));
+firstNonRepeatingCharacter(givenString);
+alert(character);
