@@ -1,4 +1,4 @@
-// let givenString = prompt("Enter a string: ");
+ let givenString = prompt("Enter a string: ");
 let character = "null"
 function firstNonRepeatingCharacter(string) {
 	for(let i = 0;i<string.length;i++){
