@@ -1,8 +1,8 @@
-let givenString = prompt("Enter a string");
+let givenString = prompt("Enter a string: ");
 
 function firstNonRepeatingCharacter(string) {
 	for(let i = 0;i<string.length;i++){
-		if(string.lastIndexOf(string[i])==i){
+		if(string.lastIndexOf(string[i])==i && string.indexOf(string[i])==i){
 			return string[i];
 		}
 	}	
